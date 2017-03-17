@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+sourceSets.main.java.srcDirs = ['src/com']
+
+mainClassName = 'com.example.helloworld.HelloWorld'
+
+repositories {
+	mavenCentral()
+}
+
+jar {
+	baseName = 'hello-world-by-gradle'
+	version = '00.00.00'
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
